@@ -1,0 +1,83 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home-page/home-page",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/user-center/my-page/my-page",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/user-center/login/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user-center/login/code",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/user-center/register/register",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/user-center/setting/setting",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/user-center/u-avatar-cropper/u-avatar-cropper",
+			"style": {
+				"navigationBarTitleText": "头像裁剪",
+				"navigationBarBackgroundColor": "#000000"
+			}
+		}, {
+			"path": "pages/user-center/updatename/updatename",
+			"style": {
+				"navigationBarTitleText": "更改名字",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#007AFF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/home-page/home-page",
+				"text": "首页",
+				"selectedIconPath": "static/Tabbar/_home.png",
+				"iconPath": "static/Tabbar/home.png"
+			},
+			{
+				"pagePath": "pages/user-center/my-page/my-page",
+				"text": "我的",
+				"selectedIconPath": "static/Tabbar/_my.png",
+				"iconPath": "static/Tabbar/my.png"
+			}
+		]
+	}
+}
